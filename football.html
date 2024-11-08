@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sport</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <style>
+    .nav-bar {
+    margin:0;
+    height:10vh;
+    display:flex;
+    justify-content:left;
+    align-items:top;
+    font-family:sans-serif;
+    
+    padding-top:0%;
+}
+.football-format-container {
+  width: 1142px;
+  margin: 0 auto;
+}
+
+
+body {
+  background-color: #000;
+}
+.football-courses_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  text-decoration: none;
+  padding: 50px 0;
+}
+.football-series_item {
+  -ms-flex-preferred-size: calc(33.33333% - 30px);
+  flex-basis: calc(33.33333% - 30px);
+
+  margin: 0 15px 30px;
+
+  overflow: hidden;
+  text-decoration: none;
+  border-radius: 28px;
+}
+.football-series-item_link {
+  display: block;
+  padding: 30px 20px;
+  background-color: #121212;
+  text-decoration: none;
+  overflow: hidden;
+
+  position: relative;
+}
+.football-series-item_link:hover,
+.football-series-item_link:hover .football-series-item_date {
+  text-decoration: none;
+  color: #FFF;
+}
+.football-series-item_link:hover .football-series-item_bg {
+  -webkit-transform: scale(10);
+  -ms-transform: scale(10);
+  transform: scale(10);
+  text-decoration: none;
+}
+.football-series-item_title {
+  min-height: 87px;
+  margin: 0 0 25px;
+  text-decoration: none;
+  overflow: hidden;
+
+  font-weight: bold;
+  font-size: 30px;
+  color: #FFF;
+
+  z-index: 2;
+  position: relative;
+}
+.football-series-item_date-box {
+  font-size: 18px;
+  color: #FFF;
+  text-decoration: none;
+  z-index: 2;
+  position: relative;
+}
+.football-series-item_date {
+  font-weight: bold;
+  color: #f9b234;
+  text-decoration: none;
+  -webkit-transition: color .5s ease;
+  -o-transition: color .5s ease;
+  transition: color .5s ease
+}
+.football-series-item_bg {
+  height: 128px;
+  width: 128px;
+  background-color: #f9b234;
+  text-decoration: none;
+  z-index: 1;
+  position: absolute;
+  top: -75px;
+  right: -75px;
+  border-radius: 50%;
+
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+.football-series_item:nth-child(2n) .football-series-item_bg {
+  background-color: #3ecd5e;
+}
+.football-series_item:nth-child(3n) .football-series-item_bg {
+  background-color: #e44002;
+}
+.football-series_item:nth-child(4n) .football-series-item_bg {
+  background-color: #952aff;
+}
+.football-series_item:nth-child(5n) .football-series-item_bg {
+  background-color: #cd3e94;
+}
+.football-series_item:nth-child(6n) .football-series-item_bg {
+  background-color: #4c49ea;
+}
+
+@media only screen and (max-width: 979px) {
+  .football-series_item {
+    -ms-flex-preferred-size: calc(50% - 30px);
+    flex-basis: calc(50% - 30px);
+    text-decoration: none;
+  }
+  .football-series-item_title {
+    font-size: 24px;
+    text-decoration: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .football-format-container {
+    width: 96%;
+    text-decoration: none;
+  }
+
+}
+@media only screen and (max-width: 639px) {
+  .football-series_item {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    text-decoration: none;
+  }
+  .football-series-item_title {
+    min-height: 72px;
+    line-height: 1;
+    text-decoration: none;
+    font-size: 24px;
+  }
+  .football-series-item_link {
+    padding: 22px 40px;
+    text-decoration: none;
+  }
+  .football-series-item_date-box {
+    font-size: 16px;
+    text-decoration: none;
+  }
+}
+    </style>
+
+</head>
+<body>
+    <div class="nav-bar">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Department.html">Department</a></li>
+        <li><a href="live.html">Live</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="news.html">News</a></li>
+       
+        <li><a href="about.html">About</a></li>
+    </ul>
+
+    </div>
+
+    <div class="football-format-container">
+        <div class="football-courses_box">
+          <div class="football-series_item">
+            <a href="#" class="football-series-item_link">
+              <div class="football-series-item_bg"></div>
+      
+              <div class="football-series-item_title">
+                FIFA - WorldCup 
+              </div>
+      
+              <div class="football-series-item_date-box">
+                U20
+                 <span class="football-series-item_date">
+                  Live Now..
+                </span>
+              </div>
+            </a>
+          </div>
+      
+          <div class="football-series_item">
+            <a href="#" class="football-series-item_link">
+              <div class="football-series-item_bg"></div>
+      
+              <div class="football-series-item_title">
+              UEFA Champions League
+              </div>
+      
+              <div class="football-series-item_date-box">
+                Start:
+                <span class="football-series-item_date">
+                  Soon...
+                </span>
+              </div>
+            </a>
+          </div>
+      
+          <div class="football-series_item">
+            <a href="#" class="football-series-item_link">
+              <div class="football-series-item_bg"></div>
+      
+              <div class="football-series-item_title">
+               ISL - Hero Indian Super League
+              </div>
+      
+              <div class="football-series-item_date-box">
+                Start:
+                <span class="football-series-item_date">
+                  Soon...
+                </span>
+              </div>
+            </a>
+          </div>
+          <div class="football-series_item">
+            <a href="#" class="football-series-item_link">
+              <div class="football-series-item_bg"></div>
+      
+              <div class="football-series-item_title">
+               Copa America
+              </div>
+      
+              <div class="football-series-item_date-box">
+                Start:
+                <span class="football-series-item_date">
+                  Soon...
+                </span>
+              </div>
+            </a>
+          </div>
+      
+          <div class="football-series_item">
+            <a href="#" class="football-series-item_link">
+              <div class="football-series-item_bg"></div>
+      
+              <div class="football-series-item_title">
+              English Premier League
+              </div>
+      
+              <div class="football-series-item_date-box">
+                Start:
+                <span class="football-series-item_date">
+                  04.11.2024
+                </span>
+              </div>
+            </a>
+          </div>
+      
+          <div class="football-series_item">
+            <a href="#" class="football-series-item_link">
+              <div class="football-series-item_bg"></div>
+      
+              <div class="football-series-item_title">
+                La Liaga
+              </div>
+      
+              <div class="football-series-item_date-box">
+                Start:
+                <span class="football-series-item_date">
+                  Soon...
+                </span>
+              </div>
+            </a>
+          </div>
+      
+          <div class="football-series_item">
+            <a href="#" class="football-series-item_link">
+              <div class="football-series-item_bg"></div>
+      
+              <div class="football-series-item_title">
+                Series A
+              </div>
+              <div class="football-series-item_date-box">
+                Start:
+                <span class="football-series-item_date">
+                  Soon...
+                </span>
+              </div>
+            </a>
+          </div>
+      
+          <div class="football-series_item">
+            <a href="#" class="football-series-item_link">
+              <div class="football-series-item_bg">
+              </div>
+              <div class="football-series-item_title">
+                Bundesliga
+              </div>
+              <div class="football-series-item_date-box">
+                Start:
+                <span class="football-series-item_date">
+                  Soon...
+                </span>
+              </div>
+            </a>
+          </div>
+      
+          <div class="football-series_item">
+            <a href="#" class="football-series-item_link">
+              <div class="football-series-item_bg"></div>
+      
+              <div class="football-series-item_title">
+               FA Cup
+              </div>
+      
+              <div class="football-series-item_date-box">
+                Start:
+                <span class="football-series-item_date">
+                  Soon....
+                </span>
+              </div>
+            </a>
+          </div>
+          <div class="football-series_item">
+            <a href="#" class="football-series-item_link">
+              <div class="football-series-item_bg"></div>
+      
+              <div class="football-series-item_title">
+              Africa Cup of Nations
+              </div>
+      
+              <div class="football-series-item_date-box">
+                Start:
+                <span class="football-series-item_date">
+                  Soon....
+                </span>
+              </div>
+            </a>
+          </div>
+      
+        </div>
+      </div>
+    <!-- <div class="footer">
+        <div class="col-1">
+            <h3>Useful Links</h3>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <a href="#">Cariers</a>
+            <a href="#">Shop</a>
+            <a href="#">Blog</a>
+        </div>
+        <div class="col-2">
+            <h3>Get Updates</h3>
+            <form>
+                <input type="email" placeholder="Your Email Address" required><br>
+                <button type="submit">Subscribe Now</button>
+            </form>
+        </div>
+        <div class="col-3">
+            <h3>Contact</h3>
+        <add><pre> 9391452521,<br>
+    Lovely Professional University,<br>
+    Jalandhar,Punjab(India)-144411<br>
+                    </pre>
+            </add>
+            <div class="social-icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-behance"></i>
+            </div>
+        </div>
+    </div> -->
+
+</body>
+</html>
+
+
+

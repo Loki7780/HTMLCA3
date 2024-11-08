@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+   
+        .section-content {
+        display: grid;
+        grid-template-columns:33% 33% 32%;
+       grid-gap:20px;
+        margin:20px;
+        }
+     .section-content .title{
+            width:60%;
+            text-align: center;
+            margin: auto;
+        }
+     .section-content .title h2 {
+            font-size: 40px;
+            color:#23d25d;
+            text-transform: uppercase;
+        }
+    .section-content .title p {
+            font-size: 18px;
+            color: #6a6a6a;
+            margin-top: 20px;
+        }
+    .section-content .cards {
+            display: grid;
+            grid:50% 50%;
+            grid-gap:25px;
+            margin:25px auto;
+        }
+    .section-content .cards .card{
+            width:100%;
+            background-color: #f7f7f7;
+            position: relative;
+        }
+    .section-content .cards .card img{
+            width:100%;
+            height:auto;
+        }
+    .section-content .cards .card .article{
+            padding:15px 20px;
+        }
+     .section-content .cards .card .article h4{
+            font-size: 24px;
+            color: #4a4a4a;
+
+        }
+    .section-content .cards .card .article p{
+            font-size: 16px;
+            margin: 10px 0px;
+            color: #6a6a6a;
+            
+        }
+    .section-content .cards .card a{
+            text-decoration: none;
+            display: inline-block;
+            background-color: #25c5c5;
+            padding: 8px 15px;
+            margin-left: 20px;
+            color:#fff;
+            margin-bottom: 20px;
+        }
+        .section-content .cards .card .posted-date {
+            font-weight:600;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: inline-block;
+            background-color: #25c5c5;
+            padding: 6px 15px;
+        }
+        @media screen and (max-width: 992px){
+            .section-content .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+         @media screen and (max-width: 1200px){
+            .section-content .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+        @media screen and (max-width: 768px){
+            .section-content .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+   .social >     li {
+    color: rgba(167, 146, 129, 0.6);
+    list-style-type: none;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    padding: 1%;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    transition: ease .3s;
+  }
+
+.social:hover > li {
+  opacity: 0.5;
+   color: white;
+}
+
+.social:hover > li:hover {
+  opacity: 1;
+}
+   body{
+    background-image: url(https://wallpaperset.com/w/full/b/8/0/93661.jpg);
+   }
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="department.html">Department</a></li>
+        <li><a href="live.html">Live</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+    </div>
+        <div class="section-content">
+            <div class="cards">
+                <div class="card">
+                    <div class="image-section">
+                        <img src="https://im.rediff.com/cricket/2023/oct/19ton-kohli1.JPG?w=670&h=900">
+                    </div>
+                    <div class="article">
+                        <h4>Title : Virat Kohli - Indian batter makes a new record</h4>
+                        <p>India batter Virat Kohli beat the mark of 49 tons in the 50-over format set by compatriot Sachin Tendulkar in the Cricket World Cup semi-final against New Zealand; the 35-years-old brought up the milestone century from 106 balls</p>
+
+                           <p> Virat Kohli hits a record 50th ODI century passing his idol Sachin Tendulkar who watches on in the crowd of India's World Cup semi-final against New Zealand</p>
+                    </div>
+                    <div class="blog-view">
+                        <button>Read More...</button>
+
+                    </div>
+                    <div class="posted-date">
+                        <p>Posted on nov 15</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <div class="image-section">
+                        <img src="https://www.prokabaddi.com/static-assets/waf-images/2a/49/e5/16-9/GhbFH0aJVX.png">
+                    </div>
+                    <div class="article">
+                        <h4>Title : PKL Starts from Dec 2</h4>
+                        <p>Mashal Sports, organisers of Pro Kabaddi League, announced that PKL will return to the 12-city caravan format for the 10th season of the tournament. The fans of each of the franchises can catch their favourite stars in their own city later this year as the league will commence on 2nd December 2023.</p>
+						<p>Most expensive raider at Pro Kabbadi Season 10 Players Auction that is Pawan Sehrawat | Telugu Titans | 2.605 croces and second one is Mahinder singh |Bengal Warriors | 2.12 crore</p>
+                    </div>
+                    <div class="blog-view">
+                        <button>Read More...</button>
+                    </div>
+                    <div class="posted-date">
+                        <p>Posted on nov 25</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <div class="image-section">
+                        <img src="https://images.news18.com/ibnlive/uploads/2023/07/copy-of-sports-2023-07-27t114747.668-16904387013x2.jpg">
+                    </div>
+                    <div class="article">
+                        <h4>Title : Hockey-1st Hockey India Junior and Sub Junior Men Academy Championships 2023 (Zone B) to begin tomorrow</h4>
+                        <p>New Delhi, 19th November 2023: Hockey enthusiasts' excitement grows as the inaugural 1st Hockey India Junior and Sub Junior Men Academy Championships 2023 (Zone B) are scheduled to commence in Kovilpatti, Tamil Nadu, starting on 20th November and culminating in the Final showdown on 30th November.</p>
+					
+                    </div>
+                    <div class="blog-view">
+                        <button>Read More...</button>
+                    </div>
+                    <div class="posted-date">
+                        <p>Posted on Nov 19</p>
+                    </div>
+                </div>
+            </div>
+
+			<div class="cards">
+                <div class="card">
+                    <div class="image-section">
+                        <img src="https://img.olympics.com/images/image/private/t_s_w1340/t_s_16_9_g_auto/f_auto/primary/fd5n6ckbhewu8tvzj7sb">
+                    </div>
+                    <div class="article">
+                        <h4>Title : Football-FIFA World Cup 2026 AFC football qualifiers: India beat Kuwait 1-0 in second round opener</h4>
+                        <p>India, 102nd in the FIFA Rankings, were restricted to their own half early on in the match as the world No. 136 Kuwait kept ball possession. However, as the game progressed, the Indian midfielders pressed higher and created a few chances for the forwards</p>
+					    <p>The FIFA World Cup, often simply called the World Cup, is an international association football competition between the senior men's national teams of the members of the Fédération Internationale de Football Association, the sport's global governing body</p>
+                    </div>
+                    <div class="blog-view">
+                        <button>Read More...</button>
+                    </div>
+                    <div class="posted-date">
+                        <p>Posted on Nov 17</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <div class="image-section">
+                       <img src="https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fd53d8c38-b63e-4631-8b92-63ee91b9ec2d.jpg?source=next-article&fit=scale-down&quality=highest&width=700&dpr=1">
+                    </div>
+                    <div class="article">
+
+                    <h4>ODI Cricket World Cup 2023 Winner</h4>
+                        <p>As you know the ODI Cricket World Cup 2023 is concluded on 19th November 2023 and Australia won the World Cup final. The 2023 ICC Men’s Cricket World Cup is the 13th edition of the Cricket World Cup, a quadrennial One Day International (ODI) cricket tournament contested by men’s national teams and organized by the International Cricket Council (ICC). Now, the ICC ODI Cricket World Cup is concluding with the final scheduled for November 19, 2023.</p>
+					
+                    </div>
+                    <div class="blog-view">
+                        <button>Read More...</button>
+                    </div>
+                    <div class="posted-date">
+                        <p>Posted on Nov 19</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <div class="image-section">
+                        <img src="https://www.livehindustan.com/lh-img/uploadimage/library/2023/11/19/16_9/16_9_1/virat_kohli_world_cup_2023_player_of_the_tournament_1700414743.jpg">
+                    </div>
+                    <div class="article">
+                        <h4>CWC23 Men’s Player of the Tournament</h4>
+                        <p>Kohli scored a total of 765 runs in 11 innings, the highest-ever runs scored by a batter in a single edition of the World Cup. He averaged at 95.62, and ended up with a strike rate of 90.3.</p>
+
+                            <p>The former Indian skipper also added 6 fifties to his name, including the 63-ball half-century he struck today in the tournament's final</p>
+					<p>India's run-scoring machine Virat Kohli has been named the ICC Men's Cricket World Cup 2023 Player of the Tournament. Kohli's brilliance with the bat was a defining feature of the tournament, with India's number three scoring at least a half-century in nine of his 11 innings.</p>
+                    </div>
+                    <div class="blog-view">
+                        <button>Read More...</button>
+                    </div>
+                    <div class="posted-date">
+                        <p>Posted on Nov 19</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+		
+
+
+    <div class="footer">
+        <div class="col-1">
+            <h3>Useful Links</h3>
+            <a href="about.html">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <a href="#">Careers</a>
+            <a href="#">Shop</a>
+            <a href="#">Blog</a>
+        </div>
+        <div class="col-2">
+            <h3>Get Updates</h3>
+            <form>
+                <input type="email" placeholder="Your Email Address" required><br>
+                <button type="submit">Subscribe Now</button>
+            </form>
+        </div>
+        <div class="col-3">
+            <h3>Contact</h3>
+        <add><pre> 9391452521,<br>
+    Lovely Professional University,<br>
+    Jalandhar,Punjab(India)-144411<br>
+                    </pre>
+            </add>
+            <ul class="social">
+            <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+            <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+            <li><i class="fa fa-instagram" aria-hidden="true"></i></li></li>
+            <li><i class="fa fa-github" aria-hidden="true"></i></li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+

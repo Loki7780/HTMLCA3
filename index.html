@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+      .social >     li {
+    color: rgba(167, 146, 129, 0.6);
+    list-style-type: none;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    padding: 1%;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    transition: ease .3s;
+  }
+
+.social:hover > li {
+  opacity: 0.5;
+   color: white;
+}
+
+.social:hover > li:hover {
+  opacity: 1;
+}
+     
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+    .text{
+        text-align: center;
+    }
+    h1{
+        text-align: center;
+        padding-bottom: -33%;
+        margin-bottom:-10px;
+        color:white;
+    }
+    body{
+        background-color: rgb(14, 13, 13);
+        color:white;
+    }
+   
+    </style>
+
+    
+</head>
+<body>
+   
+    <h1><marquee>Sports league</marquee></h1>
+    <div class="nav-bar">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="department.html">Department</a></li>
+        <li><a href="live.html">Live</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="news.html">News</a></li>
+        
+        <li><a href="about.html">About</a></li>
+    </ul>
+    
+    </div>
+ 
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+
+  <img src="https://img.jagranjosh.com/images/2023/June/762023/most-successful-indian-captains.jpg" style="width:100%">
+
+  </div>
+</div>
+
+<div class="mySlides fade">
+
+  <img src="https://images.thequint.com/thequint%2F2022-08%2F273181c6-6047-4696-b16e-9e972dbafcee%2FBengaluru_Bulls_captain_Pawan_Sehrawat_raids_his_way_through_the_Bengal_Warriors_defence__1_.jpg?auto=format%2Ccompress&fmt=webp&width=230&w=1200" style="width:100%">
+
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="https://img.olympics.com/images/image/private/t_social_share_thumb/f_auto/primary/ngdjbafv3twathukjbq2" style="width:100%">
+
+</div>
+<div class="mySlides fade">
+  
+    <img src="https://img.olympics.com/images/image/private/t_s_w960/t_s_16_9_g_auto/f_auto/primary/r78cpvqx0pzxteksao9o" style="width:100%">
+
+  </div> 
+  <div class="mySlides fade">
+ 
+    <img src="https://resources.pulse.icc-cricket.com/ICC/teams/header/men/NZ.png" style="width:100%">
+
+  </div> 
+  <div class="mySlides fade">
+  
+    <img src="https://images.indianexpress.com/2016/01/kabaddi-m.png" style="width:100%">
+
+  </div>
+  <div class="mySlides fade">
+
+    <img src="https://static.toiimg.com/thumb/msid-101367848,width-1280,height-720,resizemode-4/101367848.jpg" style="width:100%">
+  
+  </div> 
+  <div class="mySlides fade">
+  
+    <img src="https://bsmedia.business-standard.com/_media/bs/img/article/2023-09/16/full/1694857802-7668.jpg?im=FitAndFill=(826,465)" style="width:100%">
+
+  </div> 
+  </div>
+
+          
+
+</div>
+<br>
+ <div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  
+
+</div> ,
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000);
+}
+</script>
+    
+    
+    <div class="footer">
+        <div class="col-1">
+            <h3>Useful Links</h3>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <a href="#">Careers</a>
+            <a href="#">Shop</a>
+            <a href="#">Blog</a>
+        </div>
+        
+        <div class="col-2">
+            <h3>Get Updates</h3>
+            <form>
+                <input type="email" placeholder="Your Email Address" required><br>
+                <button type="submit">Subscribe Now</button>
+            </form>
+        </div>
+        <div class="col-3">
+            <h3>Contact</h3>
+        <add><pre> 8074225929,<br>
+    Lovely Professional University,<br>
+    Jalandhar,Punjab(India)-144411<br>
+                    </pre>
+            </add>
+            <ul class="social">
+              <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+              <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+              <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+              <li><i class="fa fa-github" aria-hidden="true"></i></li>
+              </ul>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+

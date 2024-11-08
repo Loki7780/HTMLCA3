@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="login.css">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
+
+			<div class="signup">
+				<form method="post" action="index.html">
+					<label for="chk" aria-hidden="true">Sign up</label>
+					<input type="text" name="txt" placeholder="User name" id="sname" required autofocus/>
+					<input type="email" name="email" placeholder="Email" id="semail" required/>
+					<input type="password" name="pswd" placeholder="Password" id="spass" required/>
+					<button onclick="signupfun()">Sign up</button>
+				</form>
+			</div>
+
+			<div class="login">
+				<form method="post" action="index.html">
+					<label for="chk" aria-hidden="true">Login</label>
+					<input type="email" name="email" placeholder="Email" id="email" required autofocus/>
+					<input type="password" name="pswd" placeholder="Password" id="pass" required/>
+					<button onclick="loginfun()">Login</button>
+				</form>
+			</div>
+	</div>
+    <script>
+        
+        function loginfun(){
+            var uemail=document.getElementById("email").value;
+            var upass=document.getElementById("pass").value;
+            if(uemail==="" || upass==="")
+            {
+                alert("please enter username and password");
+            }
+            else
+            {
+                if(uemail=="praveenbollam9550@gmail.com" && upass=="praveen@6235"){
+                    alert("Login Successful");
+                }
+                else
+                {
+                    alert("Username or Password Incorrect!!");
+                }
+            }
+        }
+
+    
+        function signupfun(){
+            var remail=document.getElementById("semail").value;
+            var rname=document.getElementById("sname").value;
+            var rpass=document.getElementById("spass").value;
+            if(rname==="" || remail==="" || rpass===""){
+                alert("Please enter all fields!!");
+            }
+            else
+            {
+                alert("Registration Successful");
+            }
+        }
+    </script>
+</body>
+</html>

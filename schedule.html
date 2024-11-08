@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      body {
+        background-image: url(https://wallpaperset.com/w/full/b/8/0/93661.jpg);
+      }
+    .nav-bar {
+    margin:0;
+    height:10vh;
+    display:flex;
+    justify-content:left;
+    align-items:top;
+    font-family:sans-serif;
+    
+    padding-top:0%;
+    }
+  
+
+.container{
+  width: 100%;
+  padding: 30px;
+  /* background-image: url(https://st4.depositphotos.com/1013581/21031/i/1600/depositphotos_210314980-stock-photo-panoramic-view-soccer-field-stadium.jpg); */
+  background-size: cover;
+  /* display: flex; */
+  display: grid;
+  grid-template-columns:50% 50%;
+  grid-gap:20px;
+}
+
+.s_bode{
+  width: 480px;
+  padding: 50px;
+  display: flex;
+  position:relative;
+  z-index: 1000;
+  border-radius: 20px;
+  /* background-image: url(https://images.unsplash.com/photo-1563299796-b729d0af54a5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzd8fHN0YWRpdW18ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80); */
+  background-position: 0 -289px;
+  background-size: cover;
+  overflow: hidden;
+  height: 240px;
+}
+
+
+.s_bode:after{
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color:rgba(0, 0, 0, .8);
+  z-index: -2;
+  border-radius: 20px;
+}
+
+
+.s_bode:before{
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: -47%;
+  background-color:rgba(255, 255, 255, .2);
+  z-index: -1;
+  transform: skewX(-10deg);
+}
+
+.s_bode img{
+  height: 100px;
+  width: 100px;
+}
+
+.left_section{
+  flex-grow: 2;
+   display: flex;
+   flex-direction: column;
+  align-items: center;
+}
+
+.mid_section{
+  /* flex-grow: 1; */
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff !important;
+  font-size: 26px;
+}
+
+.right_section{
+  flex-grow:2;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+}
+
+.s_bode h2{
+  margin-top: 10px;
+  color: #f39c12;
+  font-size: 26px;
+  font-weight:bold;
+}
+
+
+.s_bode p{
+ margin-top:5px;
+ font-weight:bold;
+ font-size: 14px;
+ color: #fff;
+}
+
+
+@media screen and (max-width: 850px) {
+    .s_bode{
+      width: 500px;
+       background-position: 0 -209px;
+    }
+
+    .s_bode img{
+      width: 80px;
+      height: 80px
+    }
+
+    .s_bode h2{
+     font-size: 18px;
+    }
+}
+
+
+@media screen and (max-width: 640px) {
+    .s_bode{
+      width: 400px;
+      padding: 10px;
+      background-position: 0 -190px;
+    }
+
+    .s_bode img{
+      width: 50px;
+      height: 50px
+    }
+
+    .s_bode h2{
+     font-size: 14px;
+    }
+    .s_bode h1{
+     font-size: 18px;
+    }
+
+    .s_bode p{
+     font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .s_bode{
+      width: 320px;
+      padding:10px;
+       background-position: 0 -90px;
+    }
+
+    .s_bode img{
+      width: 50px;
+      height: 50px
+    }
+
+    .s_bode h2{
+     font-size: 14px;
+    }
+    .s_bode h1{
+     font-size: 18px;
+     
+    }
+}
+h1 {
+  color: white;
+}
+
+    </style>
+
+</head>
+<body>
+    <div class="nav-bar">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="department.html">Department</a></li>
+        <li><a href="live.html">Live</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="news.html">News</a></li>
+       
+        <li><a href="about.html">About</a></li>
+    </ul>
+
+    </div>
+
+    <div class="container">
+      <div class="s_bode">
+       <div class="left_section">
+               <img src="https://cdn3.iconfinder.com/data/icons/flags-of-countries-3/128/India-512.png" alt="">
+               <h2>INDIA<span></span></h2>
+               <h2>(WON)<span></span></h2>
+               <p>Suryakumar Yadav <span>80(42)</span></p>
+               <p>Prasidh Krishna <span>1-50</span></p>
+               
+       </div>
+ 
+       <div class="mid_section">
+         <h1>VS</h1>
+       </div>
+       <div class="right_section">
+         <img src="https://api.sofascore.app/api/v1/team/187746/image" alt="">
+         <h2>AUSTRALIA <span></span></h2>
+         <h2>(LOSS) <span></span></h2>
+         <p>Josh Inglis <span>110(50)</span></p>
+         <p>Tanveer Sangha <span>2-47</span></p>
+       </div>
+      </div>
+
+      <div class="s_bode">
+        <div class="left_section">
+                <img src="https://s.ndtvimg.com/images/entities/300/zimbabwe-2120.png" alt="">
+                <h2>ZIMBABWE <span></span></h2>
+                <h2>(WON)<span></span></h2>
+                <p>Tadiwanashe <span>39(27)</span></p>
+                <p>Sikandar Raza <span>3-10</span></p>
+                
+        </div>
+  
+        <div class="mid_section">
+          <h1>VS</h1>
+        </div>
+        <div class="right_section">
+          <img src="https://api.sofascore.app/api/v1/team/417751/image" alt="">
+          <h2>TANZANIA <span></span></h2>
+          <h2>(LOSS) <span></span></h2>
+          <p>Salum Iumbe Ally <span>24(14)</span></p>
+          <p>Sanjaykumar Thakor <span>1-6</span></p>
+        </div>
+       </div>
+
+
+    
+       <div class="s_bode">
+        <div class="left_section">
+                <img src="https://i.ibb.co/85qGwX1/India-U23.png" alt="">
+                <h2>INDIA<span></span></h2>
+                
+                <!-- <p>AFC Asian Cup <span></span></p>
+                <p>8:00 pm, Jan <span>18,2024</span></p> -->
+                
+        </div>
+  
+        <div class="mid_section">
+          <h1>VS</h1>
+          <p>AFC Asian Cup <span></span></p>
+          <p>8:00 pm, Jan <span>18,2024</span></p>
+          <p>Group 2</p>
+        </div>
+        <div class="right_section">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Uzbekistan_Football_Federation.svg/459px-Uzbekistan_Football_Federation.svg.png" alt="">
+          <h2>UZBEKISTAN <span></span></h2>
+          
+          <p>  <span></span></p>
+          <p><span></span></p>
+        </div>
+       </div>
+
+      <div class="s_bode">
+        <div class="left_section">
+                <img src="https://upload.wikimedia.org/wikipedia/en/8/83/Churchill_Brothers_FC_Goa.png" alt="">
+                <h2>Churchill<span></span></h2>
+                <h2>(Won)<span></span></h2>
+                <p>R.Costa <span>- 2</span></p>
+                <p>Edinson Cavani <span>- 1</span></p>
+                
+        </div>
+  
+       
+  
+        <div class="mid_section">
+          <h1>4-0</h1>
+        </div>
+        <div class="right_section">
+          <img src="https://upload.wikimedia.org/wikipedia/en/f/f7/Official_TRAU_FC_Logo.png" alt="">
+          <h2>Trau FC <span></span></h2>
+          <h2>(Loss) <span></span></h2>
+          <p>M.P.Gogoi <span>- 0</span></p>
+          <p>T.Carlos Pao <span>- 0</span></p>
+        </div>
+       </div>
+       <div class="s_bode">
+        <div class="left_section">
+                <img src="https://upload.wikimedia.org/wikipedia/en/9/98/Telugu_Titans_new_logo.png" alt="">
+                <h2>Telugu Titans <span></span></h2>
+                
+        </div>
+  
+        <div class="mid_section">
+          <h1>VS</h1>
+          <p>PKL Season 10 <span></span></p>
+          <p>Dec 2, 2023, <span>7:00 pm</span></p>
+          <p>Group 1</p>
+        </div>
+        <div class="right_section">
+          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/ee/Gujarat_Giants_PKL_logo.svg/640px-Gujarat_Giants_PKL_logo.svg.png" alt="">
+          <h2>Gujarat Giants <span></span></h2>
+          
+        </div>
+       </div>
+
+
+       <div class="s_bode">
+        <div class="left_section">
+                <img src="https://cdn3.iconfinder.com/data/icons/flags-of-countries-3/128/India-512.png" alt="">
+                <h2>INDIA <span></span></h2>
+                
+        </div>
+  
+        <div class="mid_section">
+          <h1>VS</h1>
+          <p>Hockey (Womens) <span></span></p>
+          <p>Nov 29, 2023 <span>2:00 pm</span></p>
+          <p>Pool - c</p>
+        </div>
+        <div class="right_section">
+          <img src="https://hindustantimes.com/static-content/1y/cricket-logos/teams/CAN.png?2" alt="">
+          <h2>CANADA <span></span></h2>
+          
+        </div>
+       </div>
+
+
+   </div>
+   
+    <div class="footer">
+        <div class="col-1">
+            <h3>Useful Links</h3>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <a href="#">Cariers</a>
+            <a href="#">Shop</a>
+            <a href="#">Blog</a>
+        </div>
+        <div class="col-2">
+            <h3>Get Updates</h3>
+            <form>
+                <input type="email" placeholder="Your Email Address" required><br>
+                <button type="submit">Subscribe Now</button>
+            </form>
+        </div>
+        <div class="col-3">
+            <h3>Contact</h3>
+        <add><pre> 9391452521,<br>
+    Lovely Professional University,<br>
+    Jalandhar,Punjab(India)-144411<br>
+                    </pre>
+            </add>
+            <ul class="social">
+              <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+              <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+              <li><i class="fa fa-instagram" aria-hidden="true"></i></li></li>
+              <li><i class="fa fa-github" aria-hidden="true"></i></li>
+              </ul>
+        </div>
+    </div>
+
+</body>
+</html>
+
+

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      
+    .nav-bar {
+    margin:0;
+    height:10vh;
+    display:flex;
+    justify-content:left;
+    align-items:top;
+    font-family:sans-serif;
+    
+    padding-top:0%;
+    }
+  
+
+.container{
+  width: 100%;
+  padding: 30px;
+  /* background-image: url(https://st4.depositphotos.com/1013581/21031/i/1600/depositphotos_210314980-stock-photo-panoramic-view-soccer-field-stadium.jpg); */
+  background-size: cover;
+  /* display: flex; */
+  display: grid;
+  grid-template-columns:50% 50%;
+  grid-gap:20px;
+}
+
+.s_bode{
+  width: 480px;
+  padding: 50px;
+  display: flex;
+  position:relative;
+  z-index: 1000;
+  border-radius: 20px;
+  /* background-image: url(https://images.unsplash.com/photo-1563299796-b729d0af54a5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzd8fHN0YWRpdW18ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80); */
+  background-position: 0 -289px;
+  background-size: cover;
+  overflow: hidden;
+  height: 240px;
+}
+
+
+.s_bode:after{
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color:rgba(0, 0, 0, .8);
+  z-index: -2;
+  border-radius: 20px;
+}
+
+
+.s_bode:before{
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: -47%;
+  background-color:rgba(255, 255, 255, .2);
+  z-index: -1;
+  transform: skewX(-10deg);
+}
+
+.s_bode img{
+  height: 100px;
+  width: 100px;
+}
+
+.left_section{
+  flex-grow: 2;
+   display: flex;
+   flex-direction: column;
+  align-items: center;
+}
+
+.mid_section{
+  /* flex-grow: 1; */
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff !important;
+  font-size: 26px;
+}
+
+.right_section{
+  flex-grow:2;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+}
+
+.s_bode h2{
+  margin-top: 10px;
+  color: #f39c12;
+  font-size: 26px;
+  font-weight:bold;
+}
+
+
+.s_bode p{
+ margin-top:5px;
+ font-weight:bold;
+ font-size: 14px;
+ color: #fff;
+}
+
+
+@media screen and (max-width: 850px) {
+    .s_bode{
+      width: 500px;
+       background-position: 0 -209px;
+    }
+
+    .s_bode img{
+      width: 80px;
+      height: 80px
+    }
+
+    .s_bode h2{
+     font-size: 18px;
+    }
+}
+
+
+@media screen and (max-width: 640px) {
+    .s_bode{
+      width: 400px;
+      padding: 10px;
+      background-position: 0 -190px;
+    }
+
+    .s_bode img{
+      width: 50px;
+      height: 50px
+    }
+
+    .s_bode h2{
+     font-size: 14px;
+    }
+    .s_bode h1{
+     font-size: 18px;
+    }
+
+    .s_bode p{
+     font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .s_bode{
+      width: 320px;
+      padding:10px;
+       background-position: 0 -90px;
+    }
+
+    .s_bode img{
+      width: 50px;
+      height: 50px
+    }
+
+    .s_bode h2{
+     font-size: 14px;
+    }
+    .s_bode h1{
+     font-size: 18px;
+     
+    }
+}
+h1 {
+  color: white;
+}
+.mid_section h2 {
+  color: #fff;
+}
+
+
+    </style>
+
+</head>
+<body background="https://cdn.sportsbettingdime.com/app/uploads/media/1/FootballStadium.png">
+    <div class="nav-bar">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="department.html">Department</a></li>
+        <li><a href="live.html">Live</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="news.html">News</a></li>
+       
+        <li><a href="about.html">About</a></li>
+    </ul>
+
+    </div> 
+
+    <div class="container">
+      <div class="s_bode">
+       <div class="left_section">
+               <img src="https://upload.wikimedia.org/wikipedia/en/8/89/Hyderabad-Cricket-Association-Logo.png" >
+               <h2>HYD<span></span></h2>
+               <h2><span>210/5</span></h2>
+               <p>T Agarwal - <span>80(42)</span></p>
+               <p>C Milind -<span>1-50</span></p>
+               
+       </div>
+ 
+       <div class="mid_section">
+           <h1>VS</h1>
+           <img src="https://mediatradeshow.com/assets/img/transparent-live-animated-gif-12.gif" style="margin-top: -50px;">
+           <h2>Over: <span>15.2</span></h2>
+       </div>
+       <div class="right_section">
+         <img src="https://bcci-stats-sports-mechanic.s3.ap-south-1.amazonaws.com/matchcentre/teamlogos/Services.png" alt="">
+         <h2>SER <span></span></h2>
+         <h2> <span>120/5</span></h2>
+         <p>R Paliawal -<span>110(50)</span></p>
+         <p>A Gupta -<span>20(10)</span></p>
+       </div>
+      </div>
+
+      <div class="s_bode">
+        <div class="left_section">
+                <img src="https://cdn.shopify.com/s/files/1/1612/0223/products/Bengaluru-FC-Badge-Logo-GalaxT_1024x1024.png?v=1602220752" alt="">
+                <h2>Bengaluru <span></span></h2>
+    
+                <p>Gurpreet singh -<span>1</span></p>
+                <p>A irt Gope -<span>1</span></p>
+                
+        </div>
+  
+        <div class="mid_section">
+          <h2>Football</h2>
+          <h1>3-2</h1>
+         
+          <img src="https://mediatradeshow.com/assets/img/transparent-live-animated-gif-12.gif" style="margin-top: -50px;">
+        </div>
+        <div class="right_section">
+          <img src="https://secure.cache.images.core.optasports.com/soccer/teams/150x150/35319.png" alt="">
+          <h2> Punjab <span></span></h2>
+      
+          <p>Mohammed Salah -<span>1</span></p>
+          <p>Traif Akhand -<span>1</span></p>
+        </div>
+       </div>
+
+
+    
+       <div class="s_bode">
+        <div class="left_section">
+                <img src="https://upload.wikimedia.org/wikipedia/en/2/22/Hershey_Bears_logo.svg" alt="">
+                <h2>Hershey Bears<span></span></h2>
+                
+        </div>
+  
+        <div class="mid_section">
+          <h1>VS</h1>
+          <h2>In 30 mins <span></span></h2>
+       
+          <h2>Group 2</h2>
+        </div>
+        <div class="right_section">
+          <img src="https://cdn.freebiesupply.com/logos/large/2x/wilkes-barre-scranton-penguins-logo-svg-vector.svg" alt="">
+          <h2>Wilkes-Barre <span></span></h2>
+          
+         
+        </div>
+       </div>
+
+      <div class="s_bode">
+        <div class="left_section">
+                <img src="https://img1.hscicdn.com/image/upload/f_auto/lsci/db/PICTURES/CMS/345900/345971.png" alt="">
+                <h2>India Capitals <span></span></h2>
+                <h2>180/9</h2>
+                <p>G Gambhir- <span>90(50)</span></p>
+                <p>R Powell -<span>50(30)</span></p>
+                
+                
+        </div>
+        <div class="mid_section">
+          <h1>vs</h1>
+          <img src="https://mediatradeshow.com/assets/img/transparent-live-animated-gif-12.gif" style="margin-top: -50px;">
+          <h2>Overs : <span>2.0</span></h2>
+        </div>
+        <div class="right_section">
+          <img src="https://img1.hscicdn.com/image/upload/f_auto/lsci/db/PICTURES/CMS/345900/345972.png" alt="">
+  
+  
+          <h2>Gujarat Gaints<span></span></h2>
+          <h2>10/0</h2>
+          <p>P Patel- <span>5(3)</span></p>
+          <p>S Benn- <span>(5-28)</span></p>
+        </div>
+       </div>
+       
+
+     
+
+
+   </div>
+   
+    <div class="footer">
+        <div class="col-1">
+            <h3>Useful Links</h3>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <a href="#">Cariers</a>
+            <a href="#">Shop</a>
+            <a href="#">Blog</a>
+        </div>
+        <div class="col-2">
+            <h3>Get Updates</h3>
+            <form>
+                <input type="email" placeholder="Your Email Address" required><br>
+                <button type="submit">Subscribe Now</button>
+            </form>
+        </div>
+        <div class="col-3">
+            <h3>Contact</h3>
+        <add><pre> 8074225929,<br>
+    Lovely Professional University,<br>
+    Jalandhar,Punjab(India)-144411<br>
+                    </pre>
+            </add>
+            <ul class="social">
+              <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+              <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+              <li><i class="fa fa-instagram" aria-hidden="true"></i></li></li>
+              <li><i class="fa fa-github" aria-hidden="true"></i></li>
+              </ul>
+        </div>
+    </div>
+
+</body>
+</html>
+
+

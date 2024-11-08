@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sport</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <style>
+    .nav-bar {
+    margin:0;
+    height:10vh;
+    display:flex;
+    justify-content:left;
+    align-items:top;
+    font-family:sans-serif;
+    
+    padding-top:0%;
+}
+.cricket-format-container {
+  width: 1142px;
+  margin: 0 auto;
+}
+
+
+body {
+  background-color: #000;
+}
+.cricket-courses_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  text-decoration: none;
+  padding: 50px 0;
+}
+.cricket-series_item {
+  -ms-flex-preferred-size: calc(33.33333% - 30px);
+  flex-basis: calc(33.33333% - 30px);
+
+  margin: 0 15px 30px;
+
+  overflow: hidden;
+  text-decoration: none;
+  border-radius: 28px;
+}
+.cricket-series-item_link {
+  display: block;
+  padding: 30px 20px;
+  background-color: #121212;
+  text-decoration: none;
+  overflow: hidden;
+
+  position: relative;
+}
+.cricket-series-item_link:hover,
+.cricket-series-item_link:hover .cricket-series-item_date {
+  text-decoration: none;
+  color: #FFF;
+}
+.cricket-series-item_link:hover .cricket-series-item_bg {
+  -webkit-transform: scale(10);
+  -ms-transform: scale(10);
+  transform: scale(10);
+  text-decoration: none;
+}
+.cricket-series-item_title {
+  min-height: 87px;
+  margin: 0 0 25px;
+  text-decoration: none;
+  overflow: hidden;
+
+  font-weight: bold;
+  font-size: 30px;
+  color: #FFF;
+
+  z-index: 2;
+  position: relative;
+}
+.cricket-series-item_date-box {
+  font-size: 18px;
+  color: #FFF;
+  text-decoration: none;
+  z-index: 2;
+  position: relative;
+}
+.cricket-series-item_date {
+  font-weight: bold;
+  color: #f9b234;
+  text-decoration: none;
+  -webkit-transition: color .5s ease;
+  -o-transition: color .5s ease;
+  transition: color .5s ease
+}
+.cricket-series-item_bg {
+  height: 128px;
+  width: 128px;
+  background-color: #f9b234;
+  text-decoration: none;
+  z-index: 1;
+  position: absolute;
+  top: -75px;
+  right: -75px;
+  border-radius: 50%;
+
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+.cricket-series_item:nth-child(2n) .cricket-series-item_bg {
+  background-color: #3ecd5e;
+}
+.cricket-series_item:nth-child(3n) .cricket-series-item_bg {
+  background-color: #e44002;
+}
+.cricket-series_item:nth-child(4n) .cricket-series-item_bg {
+  background-color: #952aff;
+}
+.cricket-series_item:nth-child(5n) .cricket-series-item_bg {
+  background-color: #cd3e94;
+}
+.cricket-series_item:nth-child(6n) .cricket-series-item_bg {
+  background-color: #4c49ea;
+}
+
+@media only screen and (max-width: 979px) {
+  .cricket-series_item {
+    -ms-flex-preferred-size: calc(50% - 30px);
+    flex-basis: calc(50% - 30px);
+    text-decoration: none;
+  }
+  .cricket-series-item_title {
+    font-size: 24px;
+    text-decoration: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .cricket-format-container {
+    width: 96%;
+    text-decoration: none;
+  }
+
+}
+@media only screen and (max-width: 639px) {
+  .cricket-series_item {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    text-decoration: none;
+  }
+  .cricket-series-item_title {
+    min-height: 72px;
+    line-height: 1;
+    text-decoration: none;
+    font-size: 24px;
+  }
+  .cricket-series-item_link {
+    padding: 22px 40px;
+    text-decoration: none;
+  }
+  .cricket-series-item_date-box {
+    font-size: 16px;
+    text-decoration: none;
+  }
+}
+    </style>
+
+</head>
+<body>
+    <div class="nav-bar">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Department.html">Department</a></li>
+        <li><a href="live.html">Live</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="news.html">News</a></li>
+       
+        <li><a href="about.html">About</a></li>
+    </ul>
+
+    </div>
+
+    <div class="cricket-format-container">
+        <div class="cricket-courses_box">
+          <div class="cricket-series_item">
+            <a href="#" class="cricket-series-item_link">
+              <div class="cricket-series-item_bg"></div>
+      
+              <div class="cricket-series-item_title">
+                ODI - One Day International Series
+              </div>
+      
+              <div class="cricket-series-item_date-box">
+                World Cup
+                 <span class="cricket-series-item_date">
+                  Live Now..
+                </span>
+              </div>
+            </a>
+          </div>
+      
+          <div class="cricket-series_item">
+            <a href="#" class="cricket-series-item_link">
+              <div class="cricket-series-item_bg"></div>
+      
+              <div class="cricket-series-item_title">
+               T20 - International Series
+              </div>
+      
+              <div class="cricket-series-item_date-box">
+                Start:
+                <span class="cricket-series-item_date">
+                  Live Now
+                </span>
+              </div>
+            </a>
+          </div>
+      
+          <div class="cricket-series_item">
+            <a href="#" class="cricket-series-item_link">
+              <div class="cricket-series-item_bg"></div>
+      
+              <div class="cricket-series-item_title">
+               IPL - Indian Premier League
+              </div>
+      
+              <div class="cricket-series-item_date-box">
+                Start:
+                <span class="cricket-series-item_date">
+                  soon...
+                </span>
+              </div>
+            </a>
+          </div>
+          <div class="cricket-series_item">
+            <a href="#" class="cricket-series-item_link">
+              <div class="cricket-series-item_bg"></div>
+      
+              <div class="cricket-series-item_title">
+               Asia Cup - ODI
+              </div>
+      
+              <div class="cricket-series-item_date-box">
+                Start:
+                <span class="cricket-series-item_date">
+                  Soon...
+                </span>
+              </div>
+            </a>
+          </div>
+      
+          <div class="cricket-series_item">
+            <a href="#" class="cricket-series-item_link">
+              <div class="cricket-series-item_bg"></div>
+      
+              <div class="cricket-series-item_title">
+               T20 Series - IND VS AUS
+               
+              </div>
+      
+              <div class="cricket-series-item_date-box">
+                Start:
+                <span class="cricket-series-item_date">
+                  23.11.2023
+                </span>
+              </div>
+            </a>
+          </div>
+      
+          <div class="cricket-series_item">
+            <a href="#" class="cricket-series-item_link">
+              <div class="cricket-series-item_bg"></div>
+      
+              <div class="cricket-series-item_title">
+                Test Series
+              </div>
+      
+              <div class="cricket-series-item_date-box">
+                Start:
+                <span class="cricket-series-item_date">
+                  Soon...
+                </span>
+              </div>
+            </a>
+          </div>
+      
+          <div class="cricket-series_item">
+            <a href="#" class="cricket-series-item_link">
+              <div class="cricket-series-item_bg"></div>
+      
+              <div class="cricket-series-item_title">
+                Ashes Series
+              </div>
+              <div class="cricket-series-item_date-box">
+                Start:
+                <span class="cricket-series-item_date">
+                  Live Now
+                </span>
+              </div>
+            </a>
+          </div>
+      
+          <div class="cricket-series_item">
+            <a href="#" class="cricket-series-item_link">
+              <div class="cricket-series-item_bg">
+              </div>
+              <div class="cricket-series-item_title">
+                BBL - Big Bash League
+              </div>
+              <div class="cricket-series-item_date-box">
+                Start:
+                <span class="cricket-series-item_date">
+                  Soon...
+                </span>
+              </div>
+            </a>
+          </div>
+      
+          <div class="cricket-series_item">
+            <a href="#" class="cricket-series-item_link">
+              <div class="cricket-series-item_bg"></div>
+      
+              <div class="cricket-series-item_title">
+               CPL - Caribbean Premier League
+              </div>
+      
+              <div class="cricket-series-item_date-box">
+                Start:
+                <span class="cricket-series-item_date">
+                  01.03.2024
+                </span>
+              </div>
+            </a>
+          </div>
+      
+        </div>
+      </div>
+    <!-- <div class="footer">
+        <div class="col-1">
+            <h3>Useful Links</h3>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <a href="#">Cariers</a>
+            <a href="#">Shop</a>
+            <a href="#">Blog</a>
+        </div>
+        <div class="col-2">
+            <h3>Get Updates</h3>
+            <form>
+                <input type="email" placeholder="Your Email Address" required><br>
+                <button type="submit">Subscribe Now</button>
+            </form>
+        </div>
+        <div class="col-3">
+            <h3>Contact</h3>
+        <add><pre> 9391452521,<br>
+    Lovely Professional University,<br>
+    Jalandhar,Punjab(India)-144411<br>
+                    </pre>
+            </add>
+            <div class="social-icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-behance"></i>
+            </div>
+        </div>
+    </div> -->
+
+</body>
+</html>
+
+
+

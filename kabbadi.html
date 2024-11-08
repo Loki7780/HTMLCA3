@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sport</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <style>
+    .nav-bar {
+    margin:0;
+    height:10vh;
+    display:flex;
+    justify-content:left;
+    align-items:top;
+    font-family:sans-serif;
+    
+    padding-top:0%;
+}
+.kabbadi-format-container {
+  width: 1142px;
+  margin: 0 auto;
+}
+
+
+body {
+  background-color: #000;
+}
+.kabbadi-courses_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  text-decoration: none;
+  padding: 50px 0;
+}
+.kabbadi-series_item {
+  -ms-flex-preferred-size: calc(33.33333% - 30px);
+  flex-basis: calc(33.33333% - 30px);
+
+  margin: 0 15px 30px;
+
+  overflow: hidden;
+  text-decoration: none;
+  border-radius: 28px;
+}
+.kabbadi-series-item_link {
+  display: block;
+  padding: 30px 20px;
+  background-color: #121212;
+  text-decoration: none;
+  overflow: hidden;
+
+  position: relative;
+}
+.kabbadi-series-item_link:hover,
+.kabbadi-series-item_link:hover .kabbadi-series-item_date {
+  text-decoration: none;
+  color: #FFF;
+}
+.kabbadi-series-item_link:hover .kabbadi-series-item_bg {
+  -webkit-transform: scale(10);
+  -ms-transform: scale(10);
+  transform: scale(10);
+  text-decoration: none;
+}
+.kabbadi-series-item_title {
+  min-height: 87px;
+  margin: 0 0 25px;
+  text-decoration: none;
+  overflow: hidden;
+
+  font-weight: bold;
+  font-size: 30px;
+  color: #FFF;
+
+  z-index: 2;
+  position: relative;
+}
+.kabbadi-series-item_date-box {
+  font-size: 18px;
+  color: #FFF;
+  text-decoration: none;
+  z-index: 2;
+  position: relative;
+}
+.kabbadi-series-item_date {
+  font-weight: bold;
+  color: #f9b234;
+  text-decoration: none;
+  -webkit-transition: color .5s ease;
+  -o-transition: color .5s ease;
+  transition: color .5s ease
+}
+.kabbadi-series-item_bg {
+  height: 128px;
+  width: 128px;
+  background-color: #f9b234;
+  text-decoration: none;
+  z-index: 1;
+  position: absolute;
+  top: -75px;
+  right: -75px;
+  border-radius: 50%;
+
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+.kabbadi-series_item:nth-child(2n) .kabbadi-series-item_bg {
+  background-color: #3ecd5e;
+}
+.kabbadi-series_item:nth-child(3n) .kabbadi-series-item_bg {
+  background-color: #e44002;
+}
+.kabbadi-series_item:nth-child(4n) .kabbadi-series-item_bg {
+  background-color: #952aff;
+}
+.kabbadi-series_item:nth-child(5n) .kabbadi-series-item_bg {
+  background-color: #cd3e94;
+}
+.kabbadi-series_item:nth-child(6n) .kabbadi-series-item_bg {
+  background-color: #4c49ea;
+}
+
+@media only screen and (max-width: 979px) {
+  .kabbadi-series_item {
+    -ms-flex-preferred-size: calc(50% - 30px);
+    flex-basis: calc(50% - 30px);
+    text-decoration: none;
+  }
+  .kabbadi-series-item_title {
+    font-size: 24px;
+    text-decoration: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .kabbadi-format-container {
+    width: 96%;
+    text-decoration: none;
+  }
+
+}
+@media only screen and (max-width: 639px) {
+  .kabbadi-series_item {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    text-decoration: none;
+  }
+  .kabbadi-series-item_title {
+    min-height: 72px;
+    line-height: 1;
+    text-decoration: none;
+    font-size: 24px;
+  }
+  .kabbadi-series-item_link {
+    padding: 22px 40px;
+    text-decoration: none;
+  }
+  .kabbadi-series-item_date-box {
+    font-size: 16px;
+    text-decoration: none;
+  }
+}
+    </style>
+
+</head>
+<body>
+    <div class="nav-bar">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Department.html">Department</a></li>
+        <li><a href="live.html">Live</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="news.html">News</a></li>
+       
+        <li><a href="about.html">About</a></li>
+    </ul>
+
+    </div>
+
+    <div class="kabbadi-format-container">
+        <div class="kabbadi-courses_box">
+            <div class="kabbadi-series_item">
+                <a href="#" class="kabbadi-series-item_link">
+                  <div class="kabbadi-series-item_bg"></div>
+          
+                  <div class="kabbadi-series-item_title">
+                   PKL - Pro Kabbadi League 
+                  </div>
+          
+                  <div class="kabbadi-series-item_date-box">
+                    Start:
+                    <span class="kabbadi-series-item_date">
+                      09.11.2024
+                    </span>
+                  </div>
+                </a>
+              </div>
+      
+          <div class="kabbadi-series_item">
+            <a href="#" class="kabbadi-series-item_link">
+              <div class="kabbadi-series-item_bg"></div>
+      
+              <div class="kabbadi-series-item_title">
+               PHL - Punjab Hockey League
+              </div>
+      
+              <div class="kabbadi-series-item_date-box">
+                Start:
+                <span class="kabbadi-series-item_date">
+                  15.11.2024
+                </span>
+              </div>
+            </a>
+          </div>
+      
+          <div class="kabbadi-series_item">
+            <a href="#" class="kabbadi-series-item_link">
+              <div class="kabbadi-series-item_bg"></div>
+      
+              <div class="kabbadi-series-item_title">
+               SKL - Super Kabbadi League
+              </div>
+      
+              <div class="kabbadi-series-item_date-box">
+                Start:
+                <span class="kabbadi-series-item_date">
+                  01.02.2024
+                </span>
+              </div>
+            </a>
+          </div>
+          <div class="kabbadi-series_item">
+            <a href="#" class="kabbadi-series-item_link">
+              <div class="kabbadi-series-item_bg"></div>
+      
+              <div class="kabbadi-series-item_title">
+                IPL - Iron Pro League
+              </div>
+      
+              <div class="kabbadi-series-item_date-box">
+                Start:
+                <span class="kabbadi-series-item_date">
+                  Live Now
+                </span>
+              </div>
+            </a>
+          </div>
+      
+          <div class="kabbadi-series_item">
+            <a href="#" class="kabbadi-series-item_link">
+              <div class="kabbadi-series-item_bg"></div>
+      
+              <div class="kabbadi-series-item_title">
+               APL - Andhra Pro League
+              </div>
+      
+              <div class="kabbadi-series-item_date-box">
+                Start:
+                <span class="kabbadi-series-item_date">
+                  10.11.2024
+                </span>
+              </div>
+            </a>
+          </div>
+      
+          <div class="kabbadi-series_item">
+            <a href="#" class="kabbadi-series-item_link">
+              <div class="kabbadi-series-item_bg"></div>
+      
+              <div class="kabbadi-series-item_title">
+               BKL - Bangladesh Kabbadi League
+              </div>
+      
+              <div class="kabbadi-series-item_date-box">
+                Start:
+                <span class="kabbadi-series-item_date">
+                  05.01.2025
+                </span>
+              </div>
+            </a>
+          </div>
+      
+          <div class="kabbadi-series_item">
+            <a href="#" class="kabbadi-series-item_link">
+              <div class="kabbadi-series-item_bg"></div>
+      
+              <div class="kabbadi-series-item_title">
+                WKL - World Kabbadi League
+              </div>
+              <div class="kabbadi-series-item_date-box">
+                Start:
+                <span class="kabbadi-series-item_date">
+                  Live Now
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+</body>
+</html>
+
+
+

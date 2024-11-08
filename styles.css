@@ -1,0 +1,173 @@
+
+.nav-bar {
+    margin:0;
+    height:7vh;
+    display:flex;
+    justify-content:left;
+    align-items:top;
+    font-family:sans-serif;
+    
+    padding-top:5%;
+}
+ul {
+    margin:0;
+    height:0;
+    display:flex;
+    list-style-type: none;
+    
+}
+ul li a {
+    color:white;
+    font-size:20px;
+    text-decoration:none;
+    text-transform: uppercase;
+    padding:5px 10px;
+    margin:0px 10px;
+    position:relative;
+    transition:all .5s;
+    
+    
+}
+a:hover {
+    background-color:dodgerblue;
+    color:white;
+} 
+a::before {
+    
+    position:absolute;
+    bottom:12px;
+    left:12px;
+    height:12px;
+    width:12px;
+    border:3px solid dodgerblue;
+    border-width:0 0 3px 3px;
+    opacity:0;
+    transition:all 0.3s;
+}
+a::after{
+    
+    position:absolute;
+    top:12px;
+    right:12px;
+    height:12px;
+    width:12px;
+    border:3px solid dodgerblue;
+    opacity:0;
+    transition:all 0.3s;
+}
+a:hover::after {
+    opacity:1;
+    top:-8px;
+    right:-8px;
+}
+a:hover::before {
+    opacity:1;
+    bottom:-8px;
+    left:-8px;
+}
+
+h1 {
+    color:rgb(164, 119, 119);
+    font-size:60px;
+    top:auto;
+    
+}
+.data {
+   top:40%;
+   left:40%;
+    position: absolute;
+   background-color:transparent;
+   text-align: center;
+  
+}
+.footer {
+ 
+    padding:30px 15%;
+    background-color: #333;
+    color:#efefef;
+    display:flex;
+
+}
+.footer div {
+    text-align:center;
+
+}
+.col-2{
+    flex-grow:2;
+}
+.footer div h3{
+    font-weight: 300;
+    margin-bottom: 30px;
+    text-decoration: 1px;
+}
+.col-1 a{
+    display: block;
+    text-decoration: none;
+    color:#efefef;
+    margin-bottom: 10px;
+}
+form input {
+    width:400px;
+    height:45px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    outline: none;
+    border:none;
+}
+form button {
+    background-color:transparent;
+    border: 2px solid #fff;
+    color:#fff;
+    border-radius:30px;
+    padding:10px 30px;
+    font-size:15px ;
+    cursor: pointer;
+}
+
+.social-icons {
+    margin-top:30px;
+
+}
+
+.social-icons i{
+    font-size:22px;
+    margin:10px;
+    cursor:pointer;
+}
+
+add {
+    font-size: large;
+}
+h1 {
+    color:rgb(20, 18, 18);
+   
+}
+body{
+    background-color: black !important;
+}
+
+.social >     li {
+    color: rgba(167, 146, 129, 0.6);
+    list-style-type: none;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    padding: 1%;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    transition: ease .3s;
+  }
+
+.social:hover > li {
+  opacity: 0.5;
+   color: white;
+}
+
+.social:hover > li:hover {
+  opacity: 1;
+}
+
